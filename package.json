@@ -1,0 +1,24 @@
+{
+  "name": "node_js_complete_guide",
+  "version": "1.0.0",
+  "description": "node_js_playground",
+  "main": "first-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node apps.js",
+    "start-server": "node apps.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakjido/node_playground.git"
+  },
+  "author": "rakjido",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakjido/node_playground/issues"
+  },
+  "homepage": "https://github.com/rakjido/node_playground#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
