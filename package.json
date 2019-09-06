@@ -5,7 +5,7 @@
   "main": "first-app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node apps.js",
+    "start": "nodemon apps.js",
     "start-server": "node apps.js"
   },
   "repository": {
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/rakjido/node_playground#readme",
   "devDependencies": {
     "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
