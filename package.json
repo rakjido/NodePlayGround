@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/rakjido/node_playground#readme",
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.3"
   },
   "dependencies": {
     "express": "^4.17.1"

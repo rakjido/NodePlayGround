@@ -1,16 +1,27 @@
 // http
-const http = require('http');
-const routes = require('./routes');
+//const http = require('http');
 
-const server = http.createServer(routes);
+const express = require('express');
 
-server.listen(3000);
+const app = express();
 
-// https
+app.use('/', (req, res, next) => {
+    console.log('This always runs!');
+    next();
+});
 
-// fs
+app.use('/add-product', (req, res, next)=>{
+    console.log('Add Product Middleware');
+    res.send('<h1>Add Product Page</h1>')
+    
+});
 
-// path
 
-// os
+app.use('/', (req, res, next)=>{
+    console.log('Hello Middleware');
+    res.send('<h1>Hello from Express!</h1>')
+});
 
+// const server = http.createServer(app);
+// server.listen(3000);
+app.listen(3000);
